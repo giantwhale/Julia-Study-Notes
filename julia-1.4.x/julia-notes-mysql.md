@@ -15,7 +15,7 @@ To resolve this, install `DecPF` from github directly. Here's a working example:
 using Pkg
 
 Pkg.add("DataFrames")
-Pkg.add(PackageSpec(url="git://github.com/JuliaMath/DecFP.jl"))
+Pkg.add(PackageSpec(url="git://github.com/JuliaMath/DecFP.jl"))  # commit hash: 96e2e23c2f3d56979321ca2a7de61232f784cd76
 Pkg.add(PackageSpec(url="https://github.com/JuliaComputing/MySQL.jl"))
 
 conn = DBInterface.connect(MySQL.Connection, "localhost", "root", "my_very_strong_password")
